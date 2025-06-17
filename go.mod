@@ -4,7 +4,9 @@ go 1.23.0
 
 toolchain go1.23.3
 
-replace gorm.io/driver/kingbase => ./internal/db/driver/kingbase
+
+require kingbase.com/gokb v1.0.0
+replace "kingbase.com/gokb" => ./internal/db/driver/kingbase
 
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.6.0
@@ -25,8 +27,8 @@ require (
 	github.com/tencentyun/cos-go-sdk-v5 v0.7.62
 	github.com/vmihailenco/msgpack/v5 v5.4.1
 	github.com/xeipuuv/gojsonschema v1.2.0
-	gorm.io/driver/kingbase v0.0.0-00010101000000-000000000000
 	gorm.io/driver/mysql v1.5.7
+	gorm.io/driver/postgres v1.6.0
 	gorm.io/gorm v1.25.11
 )
 
@@ -62,9 +64,9 @@ require (
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
-	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
-	github.com/jackc/pgx/v5 v5.5.5 // indirect
-	github.com/jackc/puddle/v2 v2.2.1 // indirect
+	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
+	github.com/jackc/pgx/v5 v5.6.0 // indirect
+	github.com/jackc/puddle/v2 v2.2.2 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
