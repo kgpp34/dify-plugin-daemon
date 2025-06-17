@@ -11,6 +11,11 @@ WORKDIR /app
 # using goproxy if you have network issues
 # ENV GOPROXY=https://goproxy.cn,direct
 
+# download dependencies
+RUN go mod download
+RUN go get github.com/jinzhu/inflection@latest && \
+    go get github.com/jinzhu/now@latest
+
 # build
 RUN go build \
     -ldflags "\
