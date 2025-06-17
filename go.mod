@@ -4,6 +4,8 @@ go 1.23.0
 
 toolchain go1.23.3
 
+replace gorm.io/driver/kingbase => ./internal/db/driver/kingbase
+
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.6.0
 	github.com/aws/aws-sdk-go-v2 v1.30.4
@@ -23,6 +25,7 @@ require (
 	github.com/tencentyun/cos-go-sdk-v5 v0.7.62
 	github.com/vmihailenco/msgpack/v5 v5.4.1
 	github.com/xeipuuv/gojsonschema v1.2.0
+	gorm.io/driver/kingbase v0.0.0-00010101000000-000000000000
 	gorm.io/driver/mysql v1.5.7
 	gorm.io/gorm v1.25.11
 )
@@ -135,5 +138,4 @@ require (
 	google.golang.org/protobuf v1.34.2 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1
-	gorm.io/driver/postgres v1.5.9
 )

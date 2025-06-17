@@ -2,9 +2,9 @@ package pg
 
 import (
 	"fmt"
-	"github.com/langgenius/dify-plugin-daemon/internal/db/driver/kingbase"
 	"time"
 
+	"gorm.io/driver/kingbase"
 	"gorm.io/gorm"
 )
 
